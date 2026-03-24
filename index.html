@@ -511,15 +511,13 @@
     </nav>
 
     <!-- Reservation Modal -->
-    <div id="reservationModal" class="fixed inset-0 bg-black bg-opacity-85 z-[100] hidden items-center justify-center p-4">
-        <div class="bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-2xl max-w-md w-full border-2 border-[#D4AF37] shadow-2xl relative overflow-hidden">
-            <!-- Close Button -->
-            <button id="closeReservationModal" class="absolute top-4 right-4 text-[#D4AF37] text-3xl font-bold hover:text-[#FFD700] transition-colors z-10">
-                ×
-            </button>
-            
+    <div id="reservationModal" class="fixed inset-0 bg-black bg-opacity-85 z-[100] hidden items-center justify-center p-4" style="overflow-y: auto;">
+        <div class="bg-gradient-to-br from-[#1A1A1A] to-[#0A0A0A] rounded-2xl max-w-md w-full border-2 border-[#D4AF37] shadow-2xl relative overflow-hidden my-auto">
             <!-- Modal Header -->
-            <div class="bg-gradient-to-r from-[#D4AF37] via-[#F5C85C] to-[#D4AF37] p-6 text-center">
+            <div class="bg-gradient-to-r from-[#D4AF37] via-[#F5C85C] to-[#D4AF37] p-6 text-center relative">
+                <button id="closeReservationModal" class="absolute top-3 right-3 w-9 h-9 flex items-center justify-center rounded-full bg-[#0A0A0A] bg-opacity-70 text-white text-2xl font-bold hover:bg-opacity-100 hover:text-[#FFD700] transition-all z-10" style="line-height: 1;">
+                    ×
+                </button>
                 <h3 class="font-serif text-3xl font-bold text-[#0A0A0A] mb-2">ご予約</h3>
                 <p class="text-[#1A1A1A] text-sm font-medium">Reservation</p>
             </div>
@@ -643,7 +641,7 @@
     
 
     <!-- Gallery Section -->
-    <section id="menu" class="py-20 px-6 bg-[#0A0A0A] fade-in visible" style="height: 959px;">
+    <section id="menu" class="py-20 px-6 bg-[#0A0A0A] fade-in visible" style="">
         <h2 class="font-serif text-4xl md:text-5xl font-bold text-center mb-4 gold-accent" style="">当店のおすすめ料理</h2><div class="max-w-6xl mx-auto" style="">
             
             <div class="divider"></div>
@@ -686,8 +684,8 @@
             </div>
 
             <!-- See More Button -->
-            <div class="text-center mt-12" style="display: block;">
-                <button id="seeMoreBtn" class="px-8 py-3 bg-transparent border-2 border-[#D4AF37] text-[#D4AF37] font-semibold rounded-lg hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all duration-300 text-lg" style="display: inline-block;">
+            <div class="text-center mt-12 relative z-10" style="display: block; padding-bottom: 20px;">
+                <button id="seeMoreBtn" class="px-8 py-3 bg-transparent border-2 border-[#D4AF37] text-[#D4AF37] font-semibold rounded-lg hover:bg-[#D4AF37] hover:text-[#0A0A0A] transition-all duration-300 text-lg" style="display: inline-block; position: relative; z-index: 10;">
                     See More
                 </button>
             </div>
